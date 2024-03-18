@@ -2,13 +2,33 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-const collectEmployees = function() {
+const collectEmployees = () =>{
   // TODO: Get user input to create and return an array of employee objects
-}
+  const trackEmployeeData = () =>{
+	let firstName = window.prompt("First Name");
+	let lastName = window.prompt("Last Name");			
+	let salary = window.prompt("Salary");
+	};
 
-addEmployeesBtn.addEventListener(onClick) () =>{
+	const info = {
+		firstName: firstName,
+		lastName: lastName,
+		salary: salary
+	};
 
-}
+	return info;
+	
+
+	while(window.confirm("Continue?")){
+		if(!window.confirm){
+		break;
+		}		
+	};
+
+	collectEmployees();
+}		
+
+
 
 
 
