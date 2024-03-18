@@ -6,10 +6,35 @@ const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
 }
 
+
+
+
+
+
 // Display the average salary
-const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
-}
+// DONE DONE DONE
+// TODO: Calculate and display the average salary
+const displayAverageSalary = () => {
+	const salaries = employeeArray.filter(Number);
+	
+	let total = 0;	
+	
+	for(const salary of salaries){
+		if(isNaN()){
+			salary = 0;
+		}
+		total += (salary);
+	}
+	
+	const howMany = salaries.length;
+	const average = total / howMany;
+	console.log(average);
+} //DONE DONE DONE
+
+
+
+
+
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
