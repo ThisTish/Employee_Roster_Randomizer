@@ -1,5 +1,6 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
+const employeeArray = [];
 
 // Collect employee data
 const collectEmployees = () =>{
@@ -17,8 +18,11 @@ const collectEmployees = () =>{
 	};
 
 	return info;
-	
 
+
+	// need to figure out how to add "info" array to employeeArray
+
+	
 	while(window.confirm("Continue?")){
 		if(!window.confirm){
 		break;
