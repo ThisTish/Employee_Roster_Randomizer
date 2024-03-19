@@ -5,35 +5,28 @@ const employeeArray = [];
 // Collect employee data
 const collectEmployees = () =>{
   // TODO: Get user input to create and return an array of employee objects
-  const trackEmployeeData = () =>{
+  // const trackEmployeeData = () =>{
 	let firstName = window.prompt("First Name");
 	let lastName = window.prompt("Last Name");			
 	let salary = window.prompt("Salary");
-	};
+
+  
 
 	const info = {
 		firstName: firstName,
 		lastName: lastName,
-		salary: salary
-	};
+		salary: salary}
+    
+  
+  employeeArray.push(info);
+  let yes = window.confirm("Add another employee?");
 
-	return info;
-
-
-	// need to figure out how to add "info" array to employeeArray
-
-	
-	while(window.confirm("Continue?")){
-		if(!window.confirm){
-		break;
-		}		
-	};
-
-	collectEmployees();
-}		
-
-
-
+  while(yes === true){
+    collectEmployees();
+    break;
+  }
+  return(employeeArray);
+};
 
 
 
@@ -46,11 +39,11 @@ const displayAverageSalary = () => {
 	
 	let total = 0;	
 	
-	for(const salary of salaries){
+	for(const number of salaries){
 		if(isNaN()){
-			salary = 0;
+			number = 0;
 		}
-		total += (salary);
+		total += (number);
 	}
 	
 	const howMany = salaries.length;
@@ -64,7 +57,7 @@ const displayAverageSalary = () => {
 
 
 // Select a random employee
-const getRandomEmployee = function(employeesArray) {
+const getRandomEmployee = function(employeeArray) {
   // TODO: Select and display a random employee
 }
 
