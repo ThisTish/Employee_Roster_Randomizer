@@ -35,17 +35,19 @@ const collectEmployees = () =>{
 // DONE DONE DONE
 // TODO: Calculate and display the average salary
 const displayAverageSalary = () => {
-	const salaries = employeeArray.filter(Number);
+	const salaries = employeeArray.map (employee => parseFloat (employee.salary));
 	
-	let total = 0;	
+  let total = 0;	
 	
-	for(const number of salaries){
-		if(isNaN()){
-			number = 0;
+	for(let money of salaries){
+    if(isNaN(money)){
+			money = 0;
 		}
-		total += (number);
+		total += (money);
 	}
 	
+  console.log(total);
+  console.log(salaries);
 	const howMany = salaries.length;
 	const average = total / howMany;
 	console.log(average);
