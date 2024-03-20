@@ -10,7 +10,8 @@ const collectEmployees = () =>{
 	let lastName = window.prompt("Last Name");			
 	let salary = window.prompt("Salary");
 
-  
+  // add an array with out the subjects so they don't show when logged by the getRandomEmployee function
+  // close prompt screen closes all out if cancel is clicked
 
 	const info = {
 		firstName: firstName,
@@ -20,7 +21,7 @@ const collectEmployees = () =>{
   
   employeeArray.push(info);
   let yes = window.confirm("Add another employee?");
-
+    console.log(employeeArray);
   while(yes === true){
     collectEmployees();
     break;
@@ -64,7 +65,7 @@ const getRandomEmployee = function(employeeArray) {
   let random = Math.floor(Math.random()* employeeArray.length) +1;
   let getName = employeeArray[random];
   console.log(getName);
-  console.log(random);
+  // console.log(random);
 
 }
 
@@ -79,8 +80,11 @@ const displayEmployees = function(employeesArray) {
   // Get the employee table
   const employeeTable = document.querySelector('#employee-table');
 
+
+  // SHOULD THIS BE MOVED, OR CALLED AFTER A LOOP SOMEWHRE?
   // Clear the employee table
   employeeTable.innerHTML = '';
+  console.log(employeesArray);
 
   // Loop through the employee data and create a row for each employee
   for (let i = 0; i < employeesArray.length; i++) {
@@ -111,6 +115,7 @@ const displayEmployees = function(employeesArray) {
 
 const trackEmployeeData = function() {
   const employees = collectEmployees();
+
 
   console.table(employees);
 
