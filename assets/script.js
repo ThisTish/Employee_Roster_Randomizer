@@ -8,12 +8,14 @@ const collectEmployees = () =>{
 	let firstName = window.prompt("First Name");
 	let lastName = window.prompt("Last Name");			
 	let salary = window.prompt("Salary");
+  
+  salary = `$${salary}`;
 
 	const info = {
 		firstName: firstName,
 		lastName: lastName,
 		salary: salary}
-    
+
   
   employeeArray.push(info);
   let yes = window.confirm("Add another employee?");
