@@ -5,13 +5,9 @@ const employeeArray = [];
 // Collect employee data
 const collectEmployees = () =>{
   // TODO: Get user input to create and return an array of employee objects
-  // const trackEmployeeData = () =>{
 	let firstName = window.prompt("First Name");
 	let lastName = window.prompt("Last Name");			
 	let salary = window.prompt("Salary");
-
-  // add an array with out the subjects so they don't show when logged by the getRandomEmployee function
-  // close prompt screen closes all out if cancel is clicked
 
 	const info = {
 		firstName: firstName,
@@ -30,9 +26,8 @@ const collectEmployees = () =>{
 
 
 
-
+// NEED TO USE TEMPLATE LITERAL TO LOG AS STRING
 // Display the average salary
-// DONE DONE DONE
 // TODO: Calculate and display the average salary
 const displayAverageSalary = () => {
 	const salaries = employeeArray.map (employee => parseFloat (employee.salary));
@@ -46,10 +41,10 @@ const displayAverageSalary = () => {
 		total += (money);
 	}
 	
-	const howMany = salaries.length;
-	const average = total / howMany;
-	console.log(average);
-} //DONE DONE DONE
+	const average = total / salaries.length;
+	// console.log(average);
+  console.log(`The average employee salary between our ${salaries.length} employee(s) is $${average}.`);
+}
 
 
 
