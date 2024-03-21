@@ -9,8 +9,6 @@ const collectEmployees = () =>{
 	let lastName = window.prompt("Last Name");			
 	let salary = window.prompt("Salary");
 
-  salary = '$' + salary;
-
 	const info = {
 		firstName: firstName,
 		lastName: lastName,
