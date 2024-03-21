@@ -26,7 +26,6 @@ const collectEmployees = () =>{
 
 
 
-// NEED TO USE TEMPLATE LITERAL TO LOG AS STRING
 // Display the average salary
 // TODO: Calculate and display the average salary
 const displayAverageSalary = () => {
@@ -42,7 +41,6 @@ const displayAverageSalary = () => {
 	}
 	
 	const average = total / salaries.length;
-	// console.log(average);
   console.log(`The average employee salary between our ${salaries.length} employee(s) is $${average}.`);
 }
 
@@ -52,12 +50,12 @@ const displayAverageSalary = () => {
 
 
 // Select a random employee
-const getRandomEmployee = function(employeeArray) {
+const getRandomEmployee = function(employeeArray) { 
   // TODO: Select and display a random employee
   let random = Math.floor(Math.random()* employeeArray.length);
   let getName = employeeArray[random];
-  console.log(getName);
-  // console.log(random); THIS JUST SHOWS THE INDEX NUMBER. NEED UNTIL I CAN GET NAMES TO SHOW IN STRING.
+  
+  console.log(`Congratulations to ${employeeArray[random].firstName} ${employeeArray[random].lastName}, our random drawing winner!`)
 
 }
 
