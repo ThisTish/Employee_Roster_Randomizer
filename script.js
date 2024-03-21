@@ -21,7 +21,6 @@ const collectEmployees = () =>{
   
   employeeArray.push(info);
   let yes = window.confirm("Add another employee?");
-    console.log(employeeArray);
   while(yes === true){
     collectEmployees();
     break;
@@ -47,8 +46,6 @@ const displayAverageSalary = () => {
 		total += (money);
 	}
 	
-  console.log(total);
-  console.log(salaries);
 	const howMany = salaries.length;
 	const average = total / howMany;
 	console.log(average);
@@ -62,10 +59,10 @@ const displayAverageSalary = () => {
 // Select a random employee
 const getRandomEmployee = function(employeeArray) {
   // TODO: Select and display a random employee
-  let random = Math.floor(Math.random()* employeeArray.length) +1;
+  let random = Math.floor(Math.random()* employeeArray.length);
   let getName = employeeArray[random];
   console.log(getName);
-  // console.log(random);
+  // console.log(random); THIS JUST SHOWS THE INDEX NUMBER. NEED UNTIL I CAN GET NAMES TO SHOW IN STRING.
 
 }
 
