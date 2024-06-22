@@ -6,7 +6,7 @@ A table of all employees and their salaries with the available funtion to see av
 
 
 Deployed at:
-https://tishthegoat.github.io/Employee_Roster_Randomizer/
+https://thistish.github.io/Employee_Roster_Randomizer/
 
 Repo at:
-https://github.com/tishthegoat/Employee_Roster_Randomizer
+https://github.com/thistish/Employee_Roster_Randomizer
